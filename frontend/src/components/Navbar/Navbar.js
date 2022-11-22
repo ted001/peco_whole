@@ -4,7 +4,7 @@ import "./Navbar.css";
 import Signout from "../Signout/Signout";
 import Currentuser from "../Currentuser/Currentuser";
 // import Userhub from "../../pages/Userhub.js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 export default function Navbar({ render }) {
   const [user, setUser] = useState("");
   const navigate = useNavigate();
@@ -37,9 +37,9 @@ export default function Navbar({ render }) {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light gradient-custom">
         <div className="leftcontainer">
-          <a className="navbar-brand" href="/meals">
+          <Link className="navbar-brand" href="/meals">
             Peko
-          </a>
+          </Link>
         </div>
         <div className="rightContainer">
           <div className="collapse navbar-collapse" id="navbarNav">
