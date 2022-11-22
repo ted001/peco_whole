@@ -37,7 +37,7 @@ export default function Navbar({ render }) {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light gradient-custom">
         <div className="leftcontainer">
-          <Link className="navbar-brand" href="/meals">
+          <Link className="navbar-brand" to="/meals">
             Peko
           </Link>
         </div>
