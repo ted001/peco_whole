@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import url from "../../images/logincss-bg.png";
 import "./Login.css";
 export default function Login() {
@@ -79,9 +79,9 @@ export default function Login() {
 
         <p>
           Don't have an account?{" "}
-          <a href="/register" className="link-info">
+          <Link to="/register" className="link-info">
             Register here
-          </a>
+          </Link>
         </p>
       </form>
       <img src={url} alt="animation image" id="bike" />
