@@ -1,0 +1,33 @@
+#bike {
+  width: 100px;
+
+  height: 100px;
+
+  position: relative;
+
+  animation: bike 8s infinite;
+}
+
+@keyframes bike {
+  0% {
+    left: 250px;
+  }
+
+  50% {
+    left: 20px;
+
+    transform: scaleX(1);
+  }
+
+  51% {
+    transform: scaleX(-1);
+  }
+
+  100% {
+    left: 75%;
+
+    background-size: contain;
+
+    transform: scaleX(-1);
+  }
+}
